@@ -139,7 +139,6 @@ button {
 }
 
 .section__title {
-  font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: center;
   text-transform: capitalize;
@@ -286,8 +285,7 @@ a.button,
   color: var(--white-color);
 }
 
-.home__data{
-    padding-top: 8rem;
+.home__data{ 
 }
 .home__data-title{ 
     margin: var(--mb-0-75) 0;
@@ -308,27 +306,27 @@ a.button,
 .home__social-links {
 	display: flex;
 	flex-flow: column; 
-	row-gap: 1rem; 
+  position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 30;
+    margin-right: 0.4rem;
+    display: inline-flex;
+
 }
 
 
 .home__social-links .link { 
-       color: var(--white-color);
-        font-size: 1.9rem;
-    
+  font-size: 1.9rem;
+  color: var(--first-color-second);  
 }
 
-.home__info{
-	display: flex;
-	background: var(--first-color-second);
-	color: var(--white-color);
-	padding: 1.4rem 1rem;
+.home__info{ 
+  display: flex;
+    background: var(--first-color-second);
+    color: var(--white-color);
+    padding: 0.4rem 1rem;
     align-items: center;
-    column-gap: 1rem;
-    position: absolute;
-    right: 0;
-    bottom: 1rem;
-    width: 275px;
 }
  
 
@@ -375,6 +373,10 @@ a.button,
 .about__container{
     row-gap: 2.6rem;
     padding-top: 2rem;
+}
+
+.about__data{
+  width: 85%;
 }
 
 .about__data .about__description{
@@ -662,7 +664,7 @@ a.button,
   display: flex;
   justify-content: space-between;
   column-gap: .5rem;
-  padding: .4rem;
+  /* padding: .4rem; */
   background-color: var(--white-color);
 }
 
@@ -718,8 +720,8 @@ font-size: var(--biggest-font-size);
 /* ======================================== footer =========================== */
 
 .footer {
-  background-color:  var(--first-color-alt);
-  color: var(--white-color);
+  /* background-color:  var(--first-color-alt);
+  color: var(--white-color); */
   position: relative;
 }
 .footer__container{
@@ -730,9 +732,7 @@ font-size: var(--biggest-font-size);
 .footer__container .footer__wrapper{
 
    grid-template-columns: repeat( 2, minmax(150px, 1fr) );
-
-   row-gap: .6rem;
-   column-gap: .6rem;
+   row-gap: 3.1rem;
    margin-top: 1rem;
 }
 
@@ -769,8 +769,8 @@ font-size: var(--biggest-font-size);
 }
 
 .footer .footer__wrapper .footer__link {
-  color: var(--white-color);
   font-weight: var(--font-medium);
+  color: var(--first-color-second);
 }
 
 
