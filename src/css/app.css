@@ -147,7 +147,7 @@ button {
 }
 
 .container {
-  max-width: 968px;
+  /* max-width: 968px; */
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -441,7 +441,6 @@ a.button,
 
 .descover__title,
 .descover__description{
-    color: var(--white-color);
     text-align: center;
 }
 
@@ -874,4 +873,189 @@ font-size: var(--biggest-font-size);
     font-size: 2rem;
     cursor: pointer;
   }
+}
+
+
+
+
+
+/* for desktop */
+@media screen and (min-width: 1180px) {
+  body {
+    /* background-color:red; */
+  }
+
+  /* ========================== header ================================== */
+ 
+  .add__header {
+    box-shadow: none;
+  }
+  .active__link{
+    background-color:transparent;
+  }
+  .active__link::before {
+
+    background: var(--white-color);
+    bottom: -.70rem;
+  }
+/* ===================================     home ===================================== */
+.home__info { 
+	padding: 1.4rem 1.2rem;
+	position: absolute;
+	right: 0;
+	bottom: 2.43rem;
+}
+
+
+
+/* ===================================about css ============================ */
+.about__title h2, .about__description {
+	text-align: left;
+}
+.about__title .btn {
+  display: block;
+  border-radius: 0;
+  width: 50%;
+}
+
+.about__data .about__description {
+	margin: 1.1rem 0; 
+}
+.about__data {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 40% 57%;
+}
+
+#about__image-two {
+	width: 255px;
+	transition: var(--img-transition);
+}
+
+#about__image-one {
+	width: 180px;
+	transition: var(--img-transition);
+}
+
+.about__container {
+	row-gap: 0;
+	padding-top: 2rem;
+	align-content: center; 
+	height: 100vh;
+}
+
+/* ================================= discover ===================================== */
+.descover__section  .descover__title {
+	font-size: var(--h1-font-size);
+}
+
+
+/* =============================== experience ================================= */
+.experience__section .section__title{ 
+    font-size: var(--h1-font-size);
+  
+}
+.experience__content {
+	
+	column-gap: 10.7rem;
+ }
+ .experience__image {
+	display: flex;
+	justify-content: center;
+}
+ .experience__image-overlay:nth-child(1){
+   position: static;
+   width: 100%;
+ }
+ .experience__image-overlay:nth-child(2){
+   position: static;
+   width: 100%;
+ }
+
+
+ .experience__img-one, .experience__img-two {
+	transition: var(--img-transition);
+	height: 22rem;
+	width: 26rem;
+	object-fit: contain;
+}
+
+
+/* ============================= PLACE ========================================= */
+.place__container {
+	grid-template-columns: repeat(4,1fr );
+	row-gap: 1rem;
+}
+
+.place__card { 
+	width: 100%;
+}
+
+.place__container {
+	grid-template-columns: repeat(4,1fr );
+	row-gap:0;
+	column-gap: .25rem;
+}
+
+
+
+/* ============================== sponsor========================== */
+.sponsor__container {
+	grid-template-columns: repeat(4,200px);
+	justify-items: flex-start;
+	justify-content: center;
+	row-gap: 0;
+	padding: 0;
+}
+
+
+/* =============================  subscriber ============================= */
+
+.subscriber .subscriber__description{
+  margin-bottom: 1rem;
+}
+
+.subscriber__form {
+	display: flex;
+	background-color: var(--white-color);
+	width: 50%;
+	margin: 0 auto;
+}
+ 
+
+.subscriber input { 
+    flex-basis: 100%; 
+}
+
+
+/* ========================= video section ======================= */
+
+.video_section .video__title{
+  font-size: var(--h1-font-size);
+}
+
+.video__content { 
+	width: 46%;
+	display: grid;
+	place-items: center;
+	place-content: center;
+	margin: 0 auto;
+  position: relative;
+}
+
+
+
+  /* ============================ Footer============================ */
+  footer.section {
+    padding: 0;
+    margin: 0;
+  }
+  .footer__container .footer__wrapper {
+    grid-template-columns: repeat(4,270px);
+ 
+    justify-content: center;
+    justify-items: center;
+  }
+
+
 }
